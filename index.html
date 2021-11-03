@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/index.css">
+    <link rel="stylesheet" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="list-question">
+            <div class="list-question-item">
+                <div class="create-list-question">
+                    <div class="create-list-question-btn">
+                        <select id="class_question">
+                            
+                            <option value="Lớp 1" id="lop1">Lớp 1</option>
+                            <option value="Lớp 2" id="lop2">Lớp 2</option>
+                            <option value="Lớp 3" id="lop3">Lớp 3</option>
+                            <option value="Lớp 4" id="lop4">Lớp 4</option>
+                            <option value="Lớp 5" id="lop5">Lớp 5</option>
+                        </select>
+                    </div>
+                    <div class="create-list-question-btn">
+                        <select id="subjects_question">                            
+                           <option value="Toán" id="montoan">Toán</option>
+                            <option value="Tiếng Việt" id="montiengviet">Tiếng Việt</option>                          
+                          </select>
+                    </div>
+                    <div class="create-list-question-btn">
+                        <button class="add_question" onclick ="create()">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            <span>Tạo</span>
+                        </button>
+                    </div>  
+                </div>
+                <div class="list-set-of-questions">
+                    <div class="difficul-question">
+                        <ul class="difficul-question-item">
+                            <li class="difficul-question-text title-question"><a href="#">Câu hỏi khó</a></li>
+                            <li class="text-border"><a href="#">T</a></li>
+                            <li class="number-of-questions"><a href="">1 câu hỏi</a></li>
+                            <li class="class-name"><a href="#">Lớp 3</a></li>
+                            <li class="name-subjects"><a href="#">Toán</a></li>
+                            <li class="bookmark"><a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a></li>
+                            <li class="share"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                            <li class="game-pad"><a href="#"><i class="fa fa-gamepad" aria-hidden="true"></i></a></li>
+                           </ul>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="edit">
+        <div class="list-edit">
+            <div class="list-edit-item">
+                <div class="list-edit-item-left">
+                    <div class="list-edit-conten-left-top" >
+                        <div class="container-edit">
+
+                            <div class="list-edit-conten-left">
+                                <div class="question-title">
+                                    <h3>Con gà có mấy chân</h3>
+                                </div>
+                                <div class="list-question">
+                                    <li><a href="">4 chân</a></li>
+                                    <li><a href="">1 chân</a></li>
+                                    <li><a href="">2 chân</a></li>
+                                    <li><a href="">3 chân</a></li>
+                                </div>
+                            </div>
+                            <div class="list-edit-conten-left">
+                                <div class="answer-title">
+                                    <h3>Câu trả lời đúng là</h3>
+                                </div>
+                                <div class="list-answer">
+                                    <li><a href="">4 chân</a></li>
+                                    <li><a href="">1 chân</a></li>
+                                    <li><a href="">2 chân</a></li>
+                                    <li><a href="">3 chân</a></li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-stt">
+                            <p>1</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="list-edit-item-right">
+                    <div class="list-edit-item-conten-right">
+                        <div class="list-edit-right-top">
+                            <h3>Câu hỏi khó <i class="fa fa-pencil-square" aria-hidden="true"></i></h3>
+                        </div>
+                        <div class="list-edit-right-center">
+                            <div class="list-center">
+                                <li><a href=""><i class="fa fa-list" aria-hidden="true"></i> 2 câu hỏi</a></li>
+                                <li><a href=""><i class="fa fa-graduation-cap" aria-hidden="true"></i> lớp 3</a></li>
+                                <li><a href=""><i class="fa fa-exchange" aria-hidden="true"></i> Tuần tự</a></li>
+                                <li><a href=""><i class="fa fa-book" aria-hidden="true"></i> Toán học</a></li>
+                            </div>
+                        </div>
+                        <div class="border-edit-center"></div>
+                        <div class="list-edit-right-bottom">
+                            <div class="list-edit-bottom-icon">
+                                <a href=""><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                                <a href=""><i class="fa fa-upload" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="list-selection">
+                                <div class="correction-previe">
+                                    <div class="correction">
+                                        <a href="#">Chỉnh sửa</a>
+                                    </div>
+                                    <div class="preview">
+                                        <a href="#">Xem trước</a>
+                                    </div>
+
+                                </div>
+                                <div class="assign">
+                                    <a href="#">Gán sách</a>
+                                    <i class="fa fa-toggle-off" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="create">
+      <div class="create-item">
+          <div class="create-item-conten-top" >
+                <div class="create-item-conten-header">
+                    <div class="exit-save">
+                        <button class="exit-btn" onclick = "exitbtn()"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i> Quay lại</a></button>
+                        <button class="save-btn" onclick = "savecreate()"><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i>Lưu lại</a></button>
+                    </div>
+                    <div class="class-subjects-question">
+                        <li class="class-btn"><a href="">Lớp 3</a></li>
+                        <li class="subjects-btn"><a href="">Toán học</a></li>
+                        <li class="question-btn"><a href="">Câu hỏi khó</a></li>
+                    </div>
+                </div>
+          </div>
+          <div class="create-item-conten-bottom">
+              <div class="create-item-conten-left">
+                  <div class="list-create">
+                      <div class="list-create-item">
+                          <li class ="stt"><a href="">1</a></li>
+                          <li class="add-file"><a href=""><i class="fa fa-files-o" aria-hidden="true"></i></a></li>
+                          <li class="delete-file"><a href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                          <div class="file-demo">
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                          </div>
+                      </div>
+                      <div class="list-create-item">
+                        <li class ="stt"><a href="">2</a></li>
+                        <li class="add-file"><a href=""><i class="fa fa-files-o" aria-hidden="true"></i></a></li>
+                        <li class="delete-file"><a href=""><i class="fa fa-trash-o" aria-hidden="true"></i></a></li>
+                        <div class="file-demo">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                    </div>
+                    <div class="add-create-item" onclick="addcreate()">                      
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>                         
+                    </div>
+                </div>
+              </div>
+              <div class="create-item-conten-right">
+                  <div class="create-item-conten-right-btn">
+                      <h3>Câu hỏi</h3>
+                      <div class="question-btn-form">
+                          <form action=""><input type="text" id="conten-create" value="Con gà có mấy chân"></form>
+                      </div>
+                      <h3>Các Lựa chọn</h3>
+                      <div class="selection-btn">
+                          <form action="" id="form-btn-radio">
+                            <input type="radio" name="answer" id = "one-leg" value="1" class="checkradio">
+                            <input type="radio" name="answer" id = "two-leg" value="2" class="checkradio">
+                            <input type="radio" name="answer" id = "third-leg" value="3" class="checkradio">
+                            <input type="radio" name="answer" id = "fourth-leg" value="4" class="checkradio">
+                            <label for="one-leg" class="check-btn-1">
+                                 <div class="dot-btn"></div>
+                                 <div class="name-btn">1 chân</div>
+                            </label>
+                            <label for="two-leg" class="check-btn-2">
+                                <div class="dot-btn"></div>
+                                <div class="name-btn">2 chân</div>
+                            </label>
+                            <label for="third-leg" class="check-btn-3">
+                                <div class="dot-btn"></div>
+                                <div class="name-btn">3 chân</div>
+                            </label>
+                            <label for="fourth-leg" class="check-btn-4">
+                                <div class="dot-btn"></div>
+                                <div class="name-btn">4 chân</div>
+                            </label>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>  
+      <input type="text">
+    </div>
+    <script src="./asset/js/index.js">
+    </script>
+</body>
+</html>
